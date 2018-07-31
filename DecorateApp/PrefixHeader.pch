@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  DecorateApp
+//
+//  Created by zjl on 2018/3/1.
+//  Copyright © 2018年 zjl. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "Static.h"
+#import "BaseViewController.h"
+#import "ZJLHud.h"
+#import <CoreData/CoreData.h>
+#import "DataSource.h"
+#import "Delegate.h"
+#import "BaseEngine.h"
+#import "AddCollectionViewCell.h"
+#import "CoreData.h"
+#import "IncrementID+CoreDataClass.h"
+#import "CategoryEntity+CoreDataClass.h"
+#endif /* PrefixHeader_pch */

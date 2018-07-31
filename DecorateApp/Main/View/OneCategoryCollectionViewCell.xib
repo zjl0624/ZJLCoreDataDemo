@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2320" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OneCategoryCell" id="gTV-IL-0wX" customClass="OneCategoryCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="258"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-Ht-uPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="237"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgq-82-Ang">
+                        <rect key="frame" x="0.0" y="237" width="192" height="21"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tqb-Ht-uPJ" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" id="9gc-Xo-Mnc"/>
+                <constraint firstItem="pgq-82-Ang" firstAttribute="top" secondItem="tqb-Ht-uPJ" secondAttribute="bottom" id="AZm-YF-Kji"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="pgq-82-Ang" secondAttribute="bottom" id="D89-tC-Lrl"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="pgq-82-Ang" secondAttribute="trailing" id="Q1M-o6-Ktx"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="tqb-Ht-uPJ" secondAttribute="trailing" id="VN1-N4-1Qg"/>
+                <constraint firstItem="pgq-82-Ang" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" id="iyL-UK-e0a"/>
+                <constraint firstItem="tqb-Ht-uPJ" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" id="tER-ma-sr0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="192" height="258"/>
+            <connections>
+                <outlet property="imageview" destination="tqb-Ht-uPJ" id="I2N-6g-5M1"/>
+                <outlet property="nameTxtLabel" destination="pgq-82-Ang" id="9Po-Ej-Dbp"/>
+            </connections>
+            <point key="canvasLocation" x="-52" y="128"/>
+        </collectionViewCell>
+    </objects>
+</document>
